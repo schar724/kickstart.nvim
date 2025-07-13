@@ -6,34 +6,34 @@ return {
     config = function()
       local lint = require 'lint'
 
-      -- lint.linters_by_ft = {
-      --   -- markdown = { 'markdownlint' },
-      --   javascript = { 'eslint_d' },
-      --   javascriptreact = { 'eslint_d' },
-      --   typescript = { 'eslint_d' },
-      --   typescriptreact = { 'eslint_d' },
-      --   css = { 'stylelint' },
-      --   scss = { 'stylelint' },
-      --   html = { 'htmlhint' },
-      --   json = { 'jsonlint' },
-      --   yaml = { 'yamllint' },
-      --   sh = { 'shellcheck' },
-      -- }
+      lint.linters_by_ft = {
+        -- markdown = { 'markdownlint' },
+        javascript = { 'eslint_d' },
+        javascriptreact = { 'eslint_d' },
+        typescript = { 'eslint_d' },
+        typescriptreact = { 'eslint_d' },
+        css = { 'stylelint' },
+        scss = { 'stylelint' },
+        html = { 'htmlhint' },
+        json = { 'jsonlint' },
+        yaml = { 'yamllint' },
+        sh = { 'shellcheck' },
+      }
 
       -- To allow other plugins to add linters to require('lint').linters_by_ft,
       -- instead set linters_by_ft like this:
-      lint.linters_by_ft = lint.linters_by_ft or {}
-      lint.linters_by_ft['markdown'] = { 'markdownlint' }
-      lint.linters_by_ft['javascript'] = { 'eslint_d' }
-      lint.linters_by_ft['javascriptreact'] = { 'eslint_d' }
-      lint.linters_by_ft['typescript'] = { 'eslint_d' }
-      lint.linters_by_ft['typescriptreact'] = { 'eslint_d' }
-      lint.linters_by_ft['css'] = { 'stylelint' }
-      lint.linters_by_ft['scss'] = { 'stylelint' }
-      lint.linters_by_ft['html'] = { 'htmlhint' }
-      lint.linters_by_ft['json'] = { 'jsonlint' }
-      lint.linters_by_ft['yaml'] = { 'yamllint' }
-      lint.linters_by_ft['sh'] = { 'shellcheck' }
+      -- lint.linters_by_ft = lint.linters_by_ft or {}
+      -- lint.linters_by_ft['markdown'] = { 'markdownlint' }
+      -- lint.linters_by_ft['javascript'] = { 'eslint_d' }
+      -- lint.linters_by_ft['javascriptreact'] = { 'eslint_d' }
+      -- lint.linters_by_ft['typescript'] = { 'eslint_d' }
+      -- lint.linters_by_ft['typescriptreact'] = { 'eslint_d' }
+      -- lint.linters_by_ft['css'] = { 'stylelint' }
+      -- lint.linters_by_ft['scss'] = { 'stylelint' }
+      -- lint.linters_by_ft['html'] = { 'htmlhint' }
+      -- lint.linters_by_ft['json'] = { 'jsonlint' }
+      -- lint.linters_by_ft['yaml'] = { 'yamllint' }
+      -- lint.linters_by_ft['sh'] = { 'shellcheck' }
       --
       -- However, note that this will enable a set of default linters,
       -- which will cause errors unless these tools are available:

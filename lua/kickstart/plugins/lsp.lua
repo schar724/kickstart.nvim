@@ -1,6 +1,6 @@
+-- Main LSP Configuration
 return {
   {
-    -- Main LSP Configuration
     'neovim/nvim-lspconfig',
     dependencies = {
       -- Automatically install LSPs and related tools to stdpath for Neovim
@@ -210,7 +210,7 @@ return {
         --
         ts_ls = {
           cmd = { 'typescript-language-server', '--stdio' },
-          filetypes = { 'typescript', 'typescriptreact', 'typescript.tsx' },
+          filetypes = { 'typescript', 'typescriptreact', 'typescript.tsx', 'javascript', 'javascriptreact', 'javascript.jsx' },
           init_options = {
             hostInfo = 'neovim',
             preferences = {
